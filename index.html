@@ -85,11 +85,11 @@ nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .ph:hover{border-color:var(--accent);transform:translateY(-4px)}
 .ph[hidden]{display:none}
 .ph button{display:block;width:100%;aspect-ratio:4/5;border:0;padding:0;background:none;cursor:zoom-in}
-.ph {width:100%;height:100%;object-fit:cover;display:block}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
 .ph figcaption{padding:10px 12px;font-size:.85rem;color:var(--muted);line-height:1.4}
 .lb{position:fixed;inset:0;z-index:50;background:rgba(4,10,8,.93);display:flex;align-items:center;justify-content:center;padding:20px}
 .lb[hidden]{display:none}
-.lb {max-width:100%;max-height:100%;border-radius:10px}
+.lb img{max-width:100%;max-height:100%;border-radius:10px;object-fit:contain}
 .lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:var(--text);font-size:2.4rem;cursor:pointer;line-height:1}
 
 /* Contact */
@@ -199,27 +199,30 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     <button class="tab" aria-pressed="false" data-f="ucapan">Ucapan</button>
   </div>
   <div class="gal" id="gal">
-    <figure class="ph" data-cat="match"><button type="button" data-full="/match-day-futscore.jpeg" aria-label="Perbesar: Match day, Futscore League U-19">< src="/match-day-futscore.jpeg" alt="Match day, Futscore League U-19" loading="lazy" width="900" height="1125"></button><figcaption>Match day, Futscore League U-19</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/starting-5-futscore.jpeg" aria-label="Perbesar: Starting 5, Futscore League U-19">< src="/starting-5-futscore.jpeg" alt="Starting 5, Futscore League U-19" loading="lazy" width="900" height="1125"></button><figcaption>Starting 5, Futscore League U-19</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/full-time-0-4.jpeg" aria-label="Perbesar: Full-time, Futscore League U-19">< src="/full-time-0-4.jpeg" alt="Full-time, Futscore League U-19" loading="lazy" width="900" height="1125"></button><figcaption>Full-time, Futscore League U-19</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/starting-five-u13.jpeg" aria-label="Perbesar: Starting five, AAFI Tangerang 4">< src="/starting-five-u13.jpeg" alt="Starting five, AAFI Tangerang 4" loading="lazy" width="900" height="1125"></button><figcaption>Starting five, AAFI Tangerang 4</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/starting-5-april.jpeg" aria-label="Perbesar: Starting 5 dengan posisi pemain">< src="/starting-5-april.jpeg" alt="Starting 5 dengan posisi pemain" loading="lazy" width="900" height="1125"></button><figcaption>Starting 5 dengan posisi pemain</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/match-result.jpeg" aria-label="Perbesar: Match result">< src="/match-result.jpeg" alt="Match result" loading="lazy" width="900" height="1125"></button><figcaption>Match result</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/full-time-fafage.jpeg" aria-label="Perbesar: Full-time, Piala Kadispora">< src="/full-time-fafage.jpeg" alt="Full-time, Piala Kadispora" loading="lazy" width="900" height="1125"></button><figcaption>Full-time, Piala Kadispora</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/full-time-hariansyah.jpeg" aria-label="Perbesar: Full-time, Piala Kadispora">< src="/full-time-hariansyah.jpeg" alt="Full-time, Piala Kadispora" loading="lazy" width="900" height="1125"></button><figcaption>Full-time, Piala Kadispora</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/match-schedule-juli.jpeg" aria-label="Perbesar: Match schedule, 12 Juli">< src="/match-schedule-juli.jpeg" alt="Match schedule, 12 Juli" loading="lazy" width="900" height="1125"></button><figcaption>Match schedule, 12 Juli</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/schedule-februari.jpeg" aria-label="Perbesar: Schedule, Februari">< src="/schedule-februari.jpeg" alt="Schedule, Februari" loading="lazy" width="900" height="1125"></button><figcaption>Schedule, Februari</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/schedule-april.jpeg" aria-label="Perbesar: Schedule, April">< src="/schedule-april.jpeg" alt="Schedule, April" loading="lazy" width="900" height="1125"></button><figcaption>Schedule, April</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/grup-b.jpeg" aria-label="Perbesar: Pembagian Grup B">< src="/grup-b.jpeg" alt="Pembagian Grup B" loading="lazy" width="900" height="1125"></button><figcaption>Pembagian Grup B</figcaption></figure>
-    <figure class="ph" data-cat="match"><button type="button" data-full="/uji-coba.jpeg" aria-label="Perbesar: Uji coba dan silaturahmi">< src="/uji-coba.jpeg" alt="Uji coba dan silaturahmi" loading="lazy" width="900" height="1125"></button><figcaption>Uji coba dan silaturahmi</figcaption></figure>
-    <figure class="ph" data-cat="ucapan"><button type="button" data-full="/ramadan.jpeg" aria-label="Perbesar: Marhaban Ya Ramadhan">< src="/ramadan.jpeg" alt="Marhaban Ya Ramadhan" loading="lazy" width="900" height="1125"></button><figcaption>Marhaban Ya Ramadhan</figcaption></figure>
-    <figure class="ph" data-cat="ucapan"><button type="button" data-full="/idul-fitri.jpeg" aria-label="Perbesar: Selamat Idul Fitri">< src="/idul-fitri.jpeg" alt="Selamat Idul Fitri" loading="lazy" width="900" height="900"></button><figcaption>Selamat Idul Fitri</figcaption></figure>
-    <figure class="ph" data-cat="ucapan"><button type="button" data-full="/hari-kartini.jpeg" aria-label="Perbesar: Selamat Hari Kartini">< src="/hari-kartini.jpeg" alt="Selamat Hari Kartini" loading="lazy" width="900" height="1125"></button><figcaption>Selamat Hari Kartini</figcaption></figure>
-    <figure class="ph" data-cat="ucapan"><button type="button" data-full="/ulang-tahun.jpeg" aria-label="Perbesar: Ucapan ulang tahun">< src="/ulang-tahun.jpeg" alt="Ucapan ulang tahun" loading="lazy" width="900" height="1199"></button><figcaption>Ucapan ulang tahun</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="match-day-futscore.jpeg" aria-label="Perbesar: Match day, Futscore League U-19"><img src="match-day-futscore.jpeg" alt="Match day, Futscore League U-19" loading="lazy" width="900" height="1125"></button><figcaption>Match day, Futscore League U-19</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="starting-5-futscore.jpeg" aria-label="Perbesar: Starting 5, Futscore League U-19"><img src="starting-5-futscore.jpeg" alt="Starting 5, Futscore League U-19" loading="lazy" width="900" height="1125"></button><figcaption>Starting 5, Futscore League U-19</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="full-time-0-4.jpeg" aria-label="Perbesar: Full-time, Futscore League U-19"><img src="full-time-0-4.jpeg" alt="Full-time, Futscore League U-19" loading="lazy" width="900" height="1125"></button><figcaption>Full-time, Futscore League U-19</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="starting-five-u13.jpeg" aria-label="Perbesar: Starting five, AAFI Tangerang 4"><img src="starting-five-u13.jpeg" alt="Starting five, AAFI Tangerang 4" loading="lazy" width="900" height="1125"></button><figcaption>Starting five, AAFI Tangerang 4</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="starting-5-april.jpeg" aria-label="Perbesar: Starting 5 dengan posisi pemain"><img src="starting-5-april.jpeg" alt="Starting 5 dengan posisi pemain" loading="lazy" width="900" height="1125"></button><figcaption>Starting 5 dengan posisi pemain</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="match-result.jpeg" aria-label="Perbesar: Match result"><img src="match-result.jpeg" alt="Match result" loading="lazy" width="900" height="1125"></button><figcaption>Match result</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="full-time-fafage.jpeg" aria-label="Perbesar: Full-time, Piala Kadispora"><img src="full-time-fafage.jpeg" alt="Full-time, Piala Kadispora" loading="lazy" width="900" height="1125"></button><figcaption>Full-time, Piala Kadispora</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="full-time-hariansyah.jpeg" aria-label="Perbesar: Full-time, Piala Kadispora"><img src="full-time-hariansyah.jpeg" alt="Full-time, Piala Kadispora" loading="lazy" width="900" height="1125"></button><figcaption>Full-time, Piala Kadispora</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="match-schedule-juli.jpeg" aria-label="Perbesar: Match schedule, 12 Juli"><img src="match-schedule-juli.jpeg" alt="Match schedule, 12 Juli" loading="lazy" width="900" height="1125"></button><figcaption>Match schedule, 12 Juli</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="schedule-februari.jpeg" aria-label="Perbesar: Schedule, Februari"><img src="schedule-februari.jpeg" alt="Schedule, Februari" loading="lazy" width="900" height="1125"></button><figcaption>Schedule, Februari</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="schedule-april.jpeg" aria-label="Perbesar: Schedule, April"><img src="schedule-april.jpeg" alt="Schedule, April" loading="lazy" width="900" height="1125"></button><figcaption>Schedule, April</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="grup-b.jpeg" aria-label="Perbesar: Pembagian Grup B"><img src="grup-b.jpeg" alt="Pembagian Grup B" loading="lazy" width="900" height="1125"></button><figcaption>Pembagian Grup B</figcaption></figure>
+    <figure class="ph" data-cat="match"><button type="button" data-full="uji-coba.jpeg" aria-label="Perbesar: Uji coba dan silaturahmi"><img src="uji-coba.jpeg" alt="Uji coba dan silaturahmi" loading="lazy" width="900" height="1125"></button><figcaption>Uji coba dan silaturahmi</figcaption></figure>
+    <figure class="ph" data-cat="ucapan"><button type="button" data-full="ramadan.jpeg" aria-label="Perbesar: Marhaban Ya Ramadhan"><img src="ramadan.jpeg" alt="Marhaban Ya Ramadhan" loading="lazy" width="900" height="1125"></button><figcaption>Marhaban Ya Ramadhan</figcaption></figure>
+    <figure class="ph" data-cat="ucapan"><button type="button" data-full="idul-fitri.jpeg" aria-label="Perbesar: Selamat Idul Fitri"><img src="idul-fitri.jpeg" alt="Selamat Idul Fitri" loading="lazy" width="900" height="900"></button><figcaption>Selamat Idul Fitri</figcaption></figure>
+    <figure class="ph" data-cat="ucapan"><button type="button" data-full="hari-kartini.jpeg" aria-label="Perbesar: Selamat Hari Kartini"><img src="hari-kartini.jpeg" alt="Selamat Hari Kartini" loading="lazy" width="900" height="1125"></button><figcaption>Selamat Hari Kartini</figcaption></figure>
+    <figure class="ph" data-cat="ucapan"><button type="button" data-full="ulang-tahun.jpeg" aria-label="Perbesar: Ucapan ulang tahun"><img src="ulang-tahun.jpeg" alt="Ucapan ulang tahun" loading="lazy" width="900" height="1199"></button><figcaption>Ucapan ulang tahun</figcaption></figure>
   </div>
 </div></section>
 
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Pratinjau gambar" hidden><button type="button" id="lbx" aria-label="Tutup">×</button>< alt=""></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Pratinjau gambar" hidden>
+  <button type="button" id="lbx" aria-label="Tutup">×</button>
+  <img id="lbi" src="" alt="">
+</div>
 
 <section id="kontak" style="background:var(--bg2)"><div class="wrap contact">
   <div>
@@ -265,12 +268,13 @@ burger.onclick=()=>{const o=links.classList.toggle('open');burger.setAttribute('
 links.querySelectorAll('a').forEach(a=>a.onclick=()=>{links.classList.remove('open');burger.setAttribute('aria-expanded',false)});
 
 /* Tab keahlian */
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===t));
+const skillTabs = document.querySelectorAll('#skills .tab');
+skillTabs.forEach(t=>t.onclick=()=>{
+  skillTabs.forEach(x=>x.setAttribute('aria-selected',x===t));
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===t.dataset.p));
 });
 
-/* Form kontak: membuka aplikasi email. Untuk kirim langsung, pakai Formspree (lihat panduan). */
+/* Form kontak */
 document.getElementById('form').onsubmit=e=>{
   e.preventDefault();
   const f=new FormData(e.target);
@@ -278,13 +282,30 @@ document.getElementById('form').onsubmit=e=>{
   location.href=`mailto:arjunaislamip@gmail.com?subject=${encodeURIComponent('Pesan dari portofolio: '+f.get('nama'))}&body=${encodeURIComponent(body)}`;
   document.getElementById('note').textContent='Aplikasi email Anda akan terbuka. Tekan kirim di sana.';
 };
+
 /* Galeri: filter dan pembesar gambar */
 const gt=document.querySelectorAll('#gtabs .tab'),figs=document.querySelectorAll('#gal .ph');
-gt.forEach(t=>t.onclick=()=>{gt.forEach(x=>x.setAttribute('aria-pressed',x===t));figs.forEach(f=>f.hidden=t.dataset.f!=='all'&&f.dataset.cat!==t.dataset.f)});
-const lb=document.getElementById('lb'),lbi=lb.querySelector('');
-figs.forEach(f=>f.querySelector('button').onclick=()=>{lbi.src=f.querySelector('button').dataset.full;lbi.alt=f.querySelector('').alt;lb.hidden=false;document.getElementById('lbx').focus()});
-const close=()=>{lb.hidden=true};
-lb.onclick=close;addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+gt.forEach(t=>t.onclick=()=>{
+  gt.forEach(x=>x.setAttribute('aria-pressed',x===t));
+  figs.forEach(f=>f.hidden=t.dataset.f!=='all'&&f.dataset.cat!==t.dataset.f);
+});
+
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+figs.forEach(f=>{
+  const btn = f.querySelector('button');
+  const img = f.querySelector('img');
+  btn.onclick = () => {
+    lbi.src = btn.dataset.full;
+    lbi.alt = img.alt;
+    lb.hidden = false;
+    document.getElementById('lbx').focus();
+  };
+});
+
+const closeLb = () => { lb.hidden = true; };
+lb.onclick = closeLb;
+addEventListener('keydown', e => { if(e.key==='Escape') closeLb(); });
+
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
